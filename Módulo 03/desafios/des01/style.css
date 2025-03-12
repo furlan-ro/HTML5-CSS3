@@ -1,66 +1,87 @@
-@charset "UTF-8";   
+@charset "UTF-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+:root {
+    --fontbody: verdana, sans-serif;
+    --fonthead: 'Passion One', cursive;
+    --fonttext: 'Sriracha', cursive;
+}
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: var(--fontbody);
+    background-color: darkgray;
+    min-height: 100vh;
 }
 
 header {
     background-color: black;
+    text-align: center;
     color: white;
+    padding: 50px 0;
 }
 
 header > h1 {
-    font-family: 'Passion One', cursive;
+    font-family: var(--fonthead);
     font-size: 10vw;
-    text-align: center;
     font-variant: small-caps;
-    padding-top: 50px;
 }
 
 header > p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
-    text-align: center;
     padding-bottom: 50px;
 }
 
 header a {
-   color: white;
-   text-decoration: none;
-   font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 header a:hover {
-    color: white;
     text-decoration: underline;
 }
+
 main {
     background-color: white;
     color: black;
-    padding: 76px 0px 76px 30px;
+    padding: 76px 30px;
 }
 
 section {
-    font-family: 'Sriracha', cursive;
+    font-family: var(--fonttext);
     font-size: 3.5vw;
     text-align: justify;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
 }
 
-body {
-    background-color: black;
+section.normal {
+  background-color: white;
+  color: black;
 }
+
+section.imagem {
+    background-color: rgba(248, 0, 0, 0.637);
+    color: white;
+}
+
+section.imagem p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 10px;}
+
 footer {
     background-color: black;
-    color: white;
     text-align: center;
-    padding: 1em;
-    bottom: 0;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 footer a {
@@ -70,7 +91,5 @@ footer a {
 }
 
 footer a:hover {
-    color: white;
     text-decoration: underline;
-    width: 100%;
 }
