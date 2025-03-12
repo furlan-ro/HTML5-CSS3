@@ -1,0 +1,76 @@
+@charset "UTF-8";   
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+header > h1 {
+    font-family: 'Passion One', cursive;
+    font-size: 10vw;
+    text-align: center;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+header a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+header a:hover {
+    color: white;
+    text-decoration: underline;
+}
+main {
+    background-color: white;
+    color: black;
+    padding: 76px 0px 76px 30px;
+}
+
+section {
+    font-family: 'Sriracha', cursive;
+    font-size: 3.5vw;
+    text-align: justify;
+}
+
+body {
+    background-color: black;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+    width: 100%;
+}
